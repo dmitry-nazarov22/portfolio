@@ -26,18 +26,18 @@ const projects = [
         description: "An atmospheric, data-driven text-adventure built in Python.",
         image: "/projects/tunnel-project.png",
         tags: ["Python"],
-        githubUrl: "https://github.com/dmitry-nazarov22/react-clean-todo-app"
+        githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py"
     },
 ]
 
 export const ProjectSection = () => {
-    return <section id="projects" className="py-24 px-4 reltive">
+    return <section id="projects" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                 Featured <span className="text-primary"> Projects </span>
             </h2>
 
-            <p className="text-center text-muted-foreground mb-12 mac-w-2xl mx-auto">
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                 Here are some of my recent projects while I'm still gaining experience.
             </p>
 
@@ -55,7 +55,7 @@ export const ProjectSection = () => {
                         <div className="p-6">
                             <div className="flex flex-wrap gap-2 mb-4">
                                 {project.tags.map((tag) => (
-                                    <span className="px-2 py-1 text-xs font-medium rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
+                                    <span key={tag} className="px-2 py-1 text-xs font-medium rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
                                 ))}
                             </div>
 
