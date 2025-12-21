@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Weather App",
         description: "A minimalistic and dynamic weather forecast app built with React + Vite.",
-        image: "/projects/weather-project.png",
+        image: "/portfolio/projects/weather-project.png",
         tags: ["React", "JavaScript", "API"],
         githubUrl: "https://github.com/dmitry-nazarov22/react-weather-app"
 
@@ -15,7 +15,7 @@ const projects = [
         id: 2,
         title: "Clean To-Do App",
         description: "A simple, modern, and persistent to-do list app built with React and Material UI. Your tasks automatically save in localStorage.",
-        image: "/projects/todo-project.png",
+        image: "/portfolio/projects/todo-project.png",
         tags: ["React", "MaterialUI", "JavaScript"],
         githubUrl: "https://github.com/dmitry-nazarov22/react-clean-todo-app"
     },
@@ -24,7 +24,7 @@ const projects = [
         id: 3,
         title: "TUNNEL - cli text adventure",
         description: "An atmospheric, data-driven text-adventure built in Python.",
-        image: "/projects/tunnel-project.png",
+        image: "/portfolio/projects/tunnel-project.png",
         tags: ["Python"],
         githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py"
     },
