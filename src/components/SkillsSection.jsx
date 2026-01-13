@@ -3,22 +3,23 @@ import { cn } from "@/lib/utils"
 
 
 const skills = [
-    //frontend
-    {name: "HTML/CSS", level: 75, category: "frontend"},
-    {name: "Javascript", level: 90, category: "frontend"},
-    {name: "React", level: 70, category: "frontend"},
-    {name: "Tailwind CSS", level: 35, category: "frontend"},
 
     // backend
-    {name: "Node.js", level: 90, category: "backend"},
-    {name: "Java Springboot", level: 75, category: "backend"},
-    {name: "PostgreSQL", level: 75, category: "backend"},
-    {name: "Python", level: 80, category: "backend"},
-    {name: "C# .NET", level: 80, category: "backend"},
-    {name: "SQLite", level: 85, category: "backend"},
+    {name: "Node.js", level: 80, category: "backend"},
+    {name: "Java", level: 70, category: "backend"},
+    {name: "PostgreSQL", level: 65, category: "backend"},
+    {name: "Python", level: 75, category: "backend"},
+    {name: "C# .NET", level: 70, category: "backend"},
+    {name: "SQLite", level: 80, category: "backend"},
+
+    //frontend
+    {name: "Javascript", level: 90, category: "frontend"},
+    {name: "React", level: 70, category: "frontend"},
+    {name: "HTML/CSS", level: 75, category: "frontend"},
+    {name: "Tailwind CSS", level: 20, category: "frontend"},
 
     //tools
-    {name: "Git/Github", level: 90, category: "tools"},
+    {name: "Git/Github", level: 80, category: "tools"},
     {name: "Figma", level: 70, category: "tools"},
     {name: "VSCode", level: 80, category: "tools"},
 ]

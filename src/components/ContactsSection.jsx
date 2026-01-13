@@ -13,7 +13,7 @@ export const ContactSection = () => {
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
                 Are in need of a developer like me? Feel free to contact.
-                I'm always open to discussing new opportunities.
+                I'm always open to discussing opportunities.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

@@ -28,6 +28,25 @@ const projects = [
         tags: ["Python"],
         githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py"
     },
+
+    {
+        id: 4,
+        title: "Contact App",
+        description: "A minimalistic contact-handling app with localstorage and multiple views made as a final project for a React course.",
+        image: "/portfolio/projects/contact-project.png",
+        tags: ["React", "JavaScript"],
+        githubUrl: "https://github.com/dmitry-nazarov22/C-10065-TT00GQ49-3001-fundamentals-of-react-nazarov-dmitry/tree/main/final-project"
+    },
+
+    {
+        id: 5,
+        title: "L I F T – mobile game",
+        description: "First group project. A top-down driving game where you are a moffet driver in a futuristic fully automated warehouse. You must get the work done before your moffet runs out of charge!",
+        image: "/portfolio/projects/lift-project.png",
+        tags: ["C#", ".NET", "Mobile", "Android", "Godot"],
+        githubUrl: "https://webpages.tuni.fi/24tiko2g/",
+        webUrl: "https://webpages.tuni.fi/24tiko2g/"
+    },
 ]
 
 export const ProjectSection = () => {

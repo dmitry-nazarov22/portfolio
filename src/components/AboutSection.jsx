@@ -9,22 +9,21 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">Passionate Full-Stack Developer</h3>
+                    <h3 className="text-2xl font-semibold">IT student</h3>
 
                     <p className="text-muted-foreground">
-                        Spending my free time diving deeper in code.
+                        Studying at TAMK, Finland with a strong focus on full stack development.
                     </p>
 
                     <p className="text-muted-foreground">
-                        I'm passionate about creating minimalistic solutions to complex
-                        problems. Constantly learning new technologies and
-                        developing small projects in my spare time.
+                        I enjoy building clean, minimalistic applications and constantly improving my technical skills.
+                        My free time I spend coding, developing personal projects, going to the gym and reading.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">Get In Touch</a>
 
-                        <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV</a>
+                        <a href="/portfolio/documents/CV-NAZAROV-DMITRY.pdf" target="_blank" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">Download CV</a>
                     </div>
                 </div>
 
@@ -35,8 +34,8 @@ export const AboutSection = () => {
                             <Code className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Web development</h4>
-                                <p className="text-muted-foreground">Responsive websites and applications. Modern frameworks.</p>
+                                <h4 className="font-semibold text-lg">Full-Stack Development</h4>
+                                <p className="text-muted-foreground">Courses shift focus now from web development to complete full-stack.</p>
                             </div>
                         </div>
                     </div>
@@ -47,7 +46,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                                <p className="text-muted-foreground">Intuitive user interfaces and seamless experience.</p>
+                                <p className="text-muted-foreground">Clean and intuitive interfaces focused on usability and simplicity.</p>
                             </div>
                         </div>
                     </div>
@@ -58,7 +57,7 @@ export const AboutSection = () => {
                             </div>
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Experience</h4>
-                                <p className="text-muted-foreground">Being a student have made several group projects. From a mobile game with agile methodologies of project management to UI/UX design of an website+app.</p>
+                                <p className="text-muted-foreground">Worked on multiple academic and personal projects: from a mobile game built with agile methodologies to full web and UI/UX projects.</p>
                             </div>
                         </div>
                     </div>

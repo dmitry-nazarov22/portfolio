@@ -15,9 +15,10 @@ export const HeroSection = () => {
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl-mx-auto opacity-0 animate-fade-in-delay-3">
-                        I'm a student at TAMK focusing on backend and full stack development.
-                        Now I'm building small projects in JavaScript + React, and Java for backend.
+                        I'm a student at TAMK focused on full stack development.
+                        I've built small but solid applications with React and I'm now diving deeper into backend development.
                         My goal is to grow into a junior backend or full stack developer.
+                        I'm also interested in cybersecurity.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
