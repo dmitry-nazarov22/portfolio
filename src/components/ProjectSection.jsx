@@ -7,7 +7,8 @@ const projects = [
         description: "A minimalistic and dynamic weather forecast app built with React + Vite.",
         image: "/portfolio/projects/weather-project.png",
         tags: ["React", "JavaScript", "API"],
-        githubUrl: "https://github.com/dmitry-nazarov22/react-weather-app"
+        githubUrl: "https://github.com/dmitry-nazarov22/react-weather-app",
+        demoUrl: "https://dmitry-nazarov22.github.io/react-weather-app/"
 
     },
 
@@ -17,7 +18,8 @@ const projects = [
         description: "A simple, modern, and persistent to-do list app built with React and Material UI. Your tasks automatically save in localStorage.",
         image: "/portfolio/projects/todo-project.png",
         tags: ["React", "MaterialUI", "JavaScript"],
-        githubUrl: "https://github.com/dmitry-nazarov22/react-clean-todo-app"
+        githubUrl: "https://github.com/dmitry-nazarov22/react-clean-todo-app",
+        demoUrl: "https://dmitry-nazarov22.github.io/react-clean-todo-app/"
     },
 
     {
@@ -26,7 +28,7 @@ const projects = [
         description: "An atmospheric, data-driven text-adventure built in Python.",
         image: "/portfolio/projects/tunnel-project.png",
         tags: ["Python"],
-        githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py"
+        githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py",
     },
 
     {
@@ -35,16 +37,16 @@ const projects = [
         description: "A minimalistic contact-handling app with localstorage and multiple views made as a final project for a React course.",
         image: "/portfolio/projects/contact-project.png",
         tags: ["React", "JavaScript"],
-        githubUrl: "https://github.com/dmitry-nazarov22/C-10065-TT00GQ49-3001-fundamentals-of-react-nazarov-dmitry/tree/main/final-project"
+        githubUrl: "https://github.com/dmitry-nazarov22/C-10065-TT00GQ49-3001-fundamentals-of-react-nazarov-dmitry/tree/main/final-project",
     },
 
     {
         id: 5,
-        title: "L I F T – mobile game",
+        title: "L I F T - mobile game",
         description: "First group project. A top-down driving game where you are a moffet driver in a futuristic fully automated warehouse. You must get the work done before your moffet runs out of charge!",
         image: "/portfolio/projects/lift-project.png",
         tags: ["C#", ".NET", "Mobile", "Android", "Godot"],
-        githubUrl: "https://webpages.tuni.fi/24tiko2g/",
+        githubUrl: "https://github.com/TeamGGames/L-I-F-T",
         webUrl: "https://webpages.tuni.fi/24tiko2g/"
     },
 ]
@@ -89,6 +91,30 @@ export const ProjectSection = () => {
                                     >
                                         <Github size={20}/>
                                     </a>
+
+                                    {project.demoUrl && (
+                                        <a
+                                            href={project.demoUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300 flex items-center gap-1"
+                                        >
+                                            <ArrowRight size={20} />
+                                            <span className="text-sm">Demo</span>
+                                        </a>
+                                    )}
+
+                                    {project.webUrl && (
+                                        <a
+                                            href={project.webUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-foreground/80 hover:text-primary transition-colors duration-300 flex items-center gap-1"
+                                        >
+                                            <ArrowRight size={20} />
+                                            <span className="text-sm">Website</span>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
