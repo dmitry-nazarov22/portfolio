@@ -211,9 +211,9 @@ export const ProjectSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {projects.map((project, key) => (
-                    <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
-                        <div
-                            className="
+                    <div
+                        key={key}
+                        className="
                                 group
                                 overflow-hidden
                                 rounded-xl
@@ -226,8 +226,7 @@ export const ProjectSection = () => {
                                 hover:border-primary/40
                                 hover:shadow-xl
                             "
-                        >
-
+                    >
                             <img
                                 src={project.image}
                                 alt={project.title}
@@ -288,8 +287,6 @@ export const ProjectSection = () => {
                                 </div>
 
                             </div>
-
-                        </div>
                     </div>
                 ))}
             </div>
