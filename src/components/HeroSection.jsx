@@ -9,21 +9,21 @@ export const HeroSection = () => {
             <div className="container max-w-4xl mx-auto text-center z-10">
                 <div className="space-y-6">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-                        <span className="inline-block opacity-0 animate-fade-in"> Hi, I'm</span>
-                        <span className="inline-block text-primary ml-4 opacity-0 animate-fade-in-delay-1"> Dmitry</span>
-                        <span className="inline-block text-gradient ml-4 opacity-0 animate-fade-in-delay-2"> Nazarov</span>
+                        <span className="inline-block opacity-0 animate-fade-in"> Junior</span>
+                        <span className="inline-block text-primary ml-4 opacity-0 animate-fade-in-delay-1"> Full-Stack</span>
+                        <span className="inline-block opacity-0 ml-4 animate-fade-in-delay-2"> Developer</span>
                     </h1>
+                    <h2 className="text-2xl md:text-3xl tracking-tight">
+                        <span className="inline-block text-gradient ml-4 opacity-0 animate-fade-in-delay-2"> Node.js • Java • React • PostgreSQL • Python</span>
+                    </h2>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl-mx-auto opacity-0 animate-fade-in-delay-3">
-                        I'm a student at TAMK focused on full stack development.
-                        I've built small but solid applications with React and I'm now diving deeper into backend development.
-                        My goal is to grow into a junior backend or full stack developer.
-                        I'm also interested in cybersecurity.
+                        Building clean, scalable applications.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                         <a href="#projects" className="cosmic-button">
-                            View My Work
+                            View projects
                         </a>
                     </div>
                 </div>

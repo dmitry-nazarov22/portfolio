@@ -1,4 +1,8 @@
-import { Code, User, Briefcase } from "lucide-react"
+import {
+    MapPin,
+    Briefcase,
+    Languages,
+} from "lucide-react";
 
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
@@ -9,15 +13,17 @@ export const AboutSection = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-semibold">IT student</h3>
+                    <h3 className="text-2xl font-semibold">Hi, I'm Dmitry Nazarov</h3>
 
                     <p className="text-muted-foreground">
-                        Studying at TAMK, Finland with a strong focus on full stack development.
+                        I'm an IT student at Tampere University of Applied Sciences with a passion for building modern full-stack applications.
                     </p>
 
                     <p className="text-muted-foreground">
-                        I enjoy building clean, minimalistic applications and constantly improving my technical skills.
-                        My free time I spend coding, developing personal projects, going to the gym and reading.
+                        During my studies I've worked with React, Java, Spring Boot, Node.js and PostgreSQL while developing academic and personal projects.
+                    </p>
+                    <p>
+                        I'm currently looking for my first internship or junior developer position where I can continue learning while contributing to real software.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -31,22 +37,11 @@ export const AboutSection = () => {
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
                             <div className="p-3 rounded-full bg-primary/10">
-                            <Code className="h-6 w-6 text-primary"/>
+                            <MapPin className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Full-Stack Development</h4>
-                                <p className="text-muted-foreground">Courses shift focus now from web development to complete full-stack.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="gradient-border p-6 card-hover">
-                        <div className="flex items-start gap-4">
-                            <div className="p-3 rounded-full bg-primary/10">
-                            <User className="h-6 w-6 text-primary"/>
-                            </div>
-                            <div className="text-left">
-                                <h4 className="font-semibold text-lg">UI/UX Design</h4>
-                                <p className="text-muted-foreground">Clean and intuitive interfaces focused on usability and simplicity.</p>
+                                <h4 className="font-semibold text-lg">Based in</h4>
+                                <p className="text-muted-foreground">Tampere, Finland.</p>
                             </div>
                         </div>
                     </div>
@@ -56,8 +51,19 @@ export const AboutSection = () => {
                             <Briefcase className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Experience</h4>
-                                <p className="text-muted-foreground">Worked on multiple academic and personal projects: from a mobile game built with agile methodologies to full web and UI/UX projects.</p>
+                                <h4 className="font-semibold text-lg">Technologies</h4>
+                                <p className="text-muted-foreground">20+ languages, frameworks and tools</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="gradient-border p-6 card-hover">
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                            <Languages className="h-6 w-6 text-primary"/>
+                            </div>
+                            <div className="text-left">
+                                <h4 className="font-semibold text-lg">Languages</h4>
+                                <p className="text-muted-foreground">🇫🇮 Finnish | 🇬🇧 English | 🇷🇺 Russian</p>
                             </div>
                         </div>
                     </div>

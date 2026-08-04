@@ -12,8 +12,9 @@ export const ContactSection = () => {
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                Are in need of a developer like me? Feel free to contact.
-                I'm always open to discussing opportunities.
+                Looking for a motivated junior developer?
+                <br/>
+                I'd be happy to discuss internships, graduate roles, or junior software engineering opportunities.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
