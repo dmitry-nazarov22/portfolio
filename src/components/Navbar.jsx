@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils';
 import { useEffect, useState } from 'react';
 import { X, Menu } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 const navItems = [
     {name: "Home", href: "#hero"},
@@ -41,28 +42,29 @@ export const Navbar = () => {
                         </span>
                 </a>
 
-                {/* desktop nav */}
-                <div className='hidden md:flex space-x-8'>
-                    {navItems.map((item, key) => (
-                        <a
-                            key={key}
-                            href={item.href}
-                            className='text-foreground/80 hover:text-primary transition-colors duration-300'
-                        >
-                                {item.name}
-                        </a>
-                    ))}
+                <div className='flex items-center gap-8'>
+                    <div className='hidden md:flex space-x-8'>
+                        {navItems.map((item, key) => (
+                            <a
+                                key={key}
+                                href={item.href}
+                                className='text-foreground/80 hover:text-primary transition-colors duration-300'
+                            >
+                                    {item.name}
+                            </a>
+                        ))}
+                    </div>
+
+                    <ThemeToggle />
+
+                    <button
+                        onClick={() => setIsMenuOpen((prev) =>!prev)}
+                        className='md:hidden p-2 text-foreground z-50'
+                        aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
+                    >
+                        {isMenuOpen ? <X size={24}/> : <Menu size={24}/> }
+                    </button>
                 </div>
-
-                {/* mobile nav */}
-
-                <button
-                    onClick={() => setIsMenuOpen((prev) =>!prev)}
-                    className='md:hidden p-2 text-foreground z-50'
-                    aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-                >
-                    {isMenuOpen ? <X size={24}/> : <Menu size={24}/> }
-                </button>
 
                 <div
                     className={cn(
