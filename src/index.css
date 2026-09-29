@@ -161,3 +161,34 @@
   padding: 0;
   text-align: center;
 }
+
+.cursor-trail {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.cursor-trail-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0 18%, #8de9ff 35%, #487cff 75%);
+  box-shadow: 0 0 5px #38bdf8, 0 0 12px #6366f199;
+}
+
+.cursor-trail-sparkle {
+  border-radius: 0;
+  background: #d9f8ff;
+  clip-path: polygon(50% 0%, 61% 37%, 100% 50%, 61% 63%, 50% 100%, 39% 63%, 0% 50%, 39% 37%);
+}
+
+:root:not(.dark) .cursor-trail-particle {
+  background: radial-gradient(circle, #e0faff 0 15%, #0284c7 40%, #4f46e5 80%);
+}
+
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .cursor-trail {
+    display: none;
+  }
+}

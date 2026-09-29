@@ -6,10 +6,12 @@ import { ProjectSection } from "../components/ProjectSection"
 import { ContactSection } from "../components/ContactsSection"
 import { Footer } from "../components/Footer"
 import { EducationSection } from "../components/EducationSection"
+import { CursorTrail } from "../components/CursorTrail"
 
 export const Home = () => {
     return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            <CursorTrail />
             {/* Navbar */}
             <Navbar />
             {/* Main Content */}
