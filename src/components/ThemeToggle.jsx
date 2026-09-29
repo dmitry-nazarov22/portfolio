@@ -3,32 +3,23 @@ import { useEffect, useState } from "react";
 import { cn } from '@/lib/utils';
 
 export const ThemeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false)
+    const [isDarkMode, setIsDarkMode] = useState(() => document.documentElement.classList.contains("dark"))
 
     useEffect(() => {
-        const storedTheme = localStorage.getItem("theme");
-            if (storedTheme === "dark") {
-                setIsDarkMode(true);
-                document.documentElement.classList.add("dark");
-            } else {
-                localStorage.setItem("theme", "light");
-            }
-    }, [])
+        document.documentElement.classList.toggle("dark", isDarkMode);
+        try {
+            localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+        } catch {
+            // Theme switching still works when browser storage is unavailable.
+        }
+    }, [isDarkMode])
 
     const toggleTheme = () => {
-        if (isDarkMode) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-            setIsDarkMode(false);
-        } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-            setIsDarkMode(true);
-        }
+        setIsDarkMode(current => !current);
     }
 
     return (
-        <button onClick={toggleTheme} className={cn(
+        <button aria-label={isDarkMode ? "Switch to light theme" : "Switch to dark theme"} onClick={toggleTheme} className={cn(
             "max-sm:hidden p-2 rounded-full transition-colors duration-300",
             "inline-flex items-center justify-center",
             "focus:outline-hidden"
