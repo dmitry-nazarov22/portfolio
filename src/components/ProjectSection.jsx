@@ -29,6 +29,7 @@ const projects = [
         id: 1,
         title: "LIFT - mobile game",
         description: "A team-developed mobile game built in Godot where players operate a moffet in an automated warehouse before the battery runs out.",
+        contribution: "Co-developed the game as part of a two-person programming team, primarily through pair programming. Took primary responsibility for driving mechanics, headlights, and sound design.",
         image: "/portfolio/projects/lift-project.png",
         tags: ["C#", "Team", "Android", "Godot"],
         githubUrl: "https://github.com/TeamGGames/L-I-F-T",
@@ -244,6 +245,13 @@ export const ProjectSection = () => {
                                 </h3>
 
                                 <p className="text-muted-foreground mb-8 text-xs">{project.description}</p>
+
+                                {project.contribution && (
+                                    <div className="mb-6 text-left">
+                                        <h4 className="text-sm font-semibold mb-2">My Contribution</h4>
+                                        <p className="text-sm text-muted-foreground">{project.contribution}</p>
+                                    </div>
+                                )}
 
                                 <div className="flex flex-wrap gap-2 mb-5">
                                     {project.tags.map(tag => (
