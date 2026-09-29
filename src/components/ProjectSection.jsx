@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
-import { Github, ArrowRight, ArrowLeft } from "lucide-react"
+import { ProjectCarousel } from "./ProjectCarousel";
+import { ArrowRight, ArrowLeft } from "lucide-react"
 
 const featuredProjects = [
     {
@@ -49,7 +50,7 @@ const projects = [
     {
         id: 2,
         title: "Java Contact Manager",
-        description: "A Java contacts manager featuring CRUD operations, custom data structures, layered architecture, and both CLI and JavaFX interfaces.",
+        description: "A Java application for creating, viewing, updating, and deleting contacts through either a command-line interface or a JavaFX desktop interface. The project combines custom data structures with a layered architecture, putting object-oriented programming concepts into practice in a complete contact-management workflow.",
         image: "/portfolio/projects/contact-project.png",
         tags: ["Java", "JavaFX", "OOP", "CRUD"],
         githubUrl: "https://github.com/dmitry-nazarov22/oo-project",
@@ -58,7 +59,7 @@ const projects = [
     {
         id: 3,
         title: "TUNNEL",
-        description: "A data-driven text adventure built in Python with branching story paths.",
+        description: "A command-line text adventure built in Python, where players explore a story through choices and branching paths. Story content is stored in JSON, keeping the narrative separate from the game logic and making it easier to extend the adventure with new scenes and decisions.",
         image: "/portfolio/projects/tunnel-project.png",
         tags: ["Python", "CLI", "JSON"],
         githubUrl: "https://github.com/dmitry-nazarov22/tunnel-text-adventure-py",
@@ -67,7 +68,7 @@ const projects = [
     {
         id: 4,
         title: "Weather App",
-        description: "A responsive weather application powered by the OpenWeather API.",
+        description: "A responsive weather application built with React and JavaScript, using the OpenWeather API to bring external weather data into the interface. The project focuses on presenting that information in a readable layout that adapts to desktop and mobile screens, connecting API-driven functionality with responsive frontend development.",
         image: "/portfolio/projects/weather-project.png",
         tags: ["React", "JavaScript", "API"],
         githubUrl: "https://github.com/dmitry-nazarov22/react-weather-app",
@@ -196,103 +197,12 @@ export const ProjectSection = () => {
             <p className="sr-only" aria-live="polite" aria-atomic="true">{featuredProjects[activeProject].title}, {activeProject + 1} of {featuredProjects.length}</p>
 
         </section>
-        <div className="container mx-auto max-w-5xl">
+        <div className="mx-auto max-w-6xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                 <span className="text-primary"> Others: </span>
             </h2>
 
-            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, key) => (
-                    <div
-                        key={key}
-                        className="
-                                group
-                                overflow-hidden
-                                rounded-xl
-                                border
-                                border-primary/10
-                                bg-card
-                                transition-all
-                                duration-300
-                                hover:-translate-y-2
-                                hover:border-primary/40
-                                hover:shadow-xl
-                            "
-                    >
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="
-                                    h-44
-                                    w-full
-                                    object-cover
-                                "
-                            />
-
-                            <div className="p-5">
-
-                                <h3 className="text-lg font-semibold mb-4">
-                                    {project.title}
-                                </h3>
-
-                                <p className="text-muted-foreground mb-8 text-xs">{project.description}</p>
-
-                                {project.contribution && (
-                                    <div className="mb-6 text-left">
-                                        <h4 className="text-sm font-semibold mb-2">My Contribution</h4>
-                                        <p className="text-sm text-muted-foreground">{project.contribution}</p>
-                                    </div>
-                                )}
-
-                                <div className="flex flex-wrap gap-2 mb-5">
-                                    {project.tags.map(tag => (
-                                        <span
-                                            key={tag}
-                                            className="
-                                                rounded-full
-                                                bg-primary/10
-                                                px-3
-                                                py-1
-                                                text-xs
-                                            "
-                                        >
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-
-                                <div className="flex justify-between">
-
-                                    <a
-                                        href={project.githubUrl}
-                                        target="_blank"
-                                        className="flex items-center gap-2 hover:text-primary"
-                                    >
-                                        <Github size={18}/>
-                                        GitHub
-                                    </a>
-
-                                    {project.demoUrl && (
-                                        <a
-                                            href={project.demoUrl}
-                                            target="_blank"
-                                            className="flex items-center gap-1 hover:text-primary"
-                                        >
-                                            Live
-                                            <ArrowRight size={16}/>
-                                        </a>
-                                    )}
-
-                                </div>
-
-                            </div>
-                    </div>
-                ))}
-            </div>
+            <ProjectCarousel projects={projects} />
 
             <div className="text-center mt-12">
                 <a
