@@ -145,7 +145,8 @@ export const EducationSection = () => {
                             <div className="space-y-3">
 
                                 {[
-                                    "Mobile Application Development",
+                                    "Cross-Platform Mobile Development (React Native)",
+                                    "Native Mobile Development (Kotlin / Swift)",
                                     "Advanced Full-Stack Development",
                                     "Modern Software Engineering",
                                 ].map(course => (

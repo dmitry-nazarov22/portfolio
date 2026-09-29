@@ -14,7 +14,7 @@ export const HeroSection = () => {
                         <span className="inline-block opacity-0 ml-4 animate-fade-in-delay-2"> Developer</span>
                     </h1>
                     <h2 className="text-2xl md:text-3xl tracking-tight">
-                        <span className="inline-block text-gradient ml-4 opacity-0 animate-fade-in-delay-2"> Node.js • Java • React • PostgreSQL • Python</span>
+                        <span className="inline-block text-gradient ml-4 opacity-0 animate-fade-in-delay-2"> React Native • TypeScript • Node.js • Java</span>
                     </h2>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl-mx-auto opacity-0 animate-fade-in-delay-3">

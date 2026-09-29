@@ -12,6 +12,7 @@ import {
 
 import {
     SiJavascript,
+    SiTypescript,
     SiDotnet,
     SiSpringboot,
     SiExpress,
@@ -21,9 +22,11 @@ import {
     SiJunit5,
     SiJest,
     SiPassport,
+    SiKotlin,
+    SiSwift,
 } from "react-icons/si";
 
-import { Monitor, Server, Database, Wrench, Lock } from "lucide-react";
+import { Monitor, Server, Smartphone, Database, Wrench, Lock } from "lucide-react";
 
 
 const techCategories = [
@@ -47,8 +50,19 @@ const techCategories = [
     technologies: [
       { name: "React", icon: FaReact },
       { name: "JavaScript", icon: SiJavascript },
+      { name: "TypeScript", icon: SiTypescript },
       { name: "Material UI", icon: SiMui },
       { name: "JavaFX", icon: FaJava },
+    ],
+  },
+
+  {
+    title: "Mobile Development",
+    icon: Smartphone,
+    technologies: [
+      { name: "React Native", icon: FaReact },
+      { name: "Kotlin", icon: SiKotlin },
+      { name: "Swift", icon: SiSwift },
     ],
   },
 

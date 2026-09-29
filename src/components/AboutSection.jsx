@@ -16,7 +16,7 @@ export const AboutSection = () => {
                     <h3 className="text-2xl font-semibold">Hi, I'm Dmitry Nazarov</h3>
 
                     <p className="text-muted-foreground">
-                        I'm an IT student at Tampere University of Applied Sciences with a passion for building modern full-stack applications.
+                        I'm an IT student at Tampere University of Applied Sciences. My focus is full-stack development, and I'm expanding into cross-platform mobile apps with React Native and native development with Kotlin and Swift.
                     </p>
 
                     <p className="text-muted-foreground">
@@ -51,8 +51,8 @@ export const AboutSection = () => {
                             <Briefcase className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Technologies</h4>
-                                <p className="text-muted-foreground">20+ languages, frameworks and tools</p>
+                                <h4 className="font-semibold text-lg">Development Focus</h4>
+                                <p className="text-muted-foreground">Web applications, mobile development, and REST APIs</p>
                             </div>
                         </div>
                     </div>
